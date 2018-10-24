@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import * as keys from '../../data/secretKeys';
 export class App extends Component {
   responseGoogle = res => {
     console.log(res);
@@ -17,7 +18,7 @@ export class App extends Component {
       <div className="App">
         <button>
           <GoogleLogin
-            clientId="241779944002-qa42v6cvk3kpu8da0jimdr364vn41t1r.apps.googleusercontent.com"
+            clientId={keys.googleClientId}
             buttonText="Login"
             onSuccess={this.responseGoogle}
             onFailure={this.responseGoogle}
@@ -36,4 +37,7 @@ const mapStateToProps = () => ({});
 
 const mapDispatchToProps = () => ({});
 
-export default connect( mapStateToProps, mapDispatchToProps )(App);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
