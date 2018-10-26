@@ -1,5 +1,57 @@
+.App {
+  background-color: rgb(100, 100, 100);
+  background-image: url('https://newevolutiondesigns.com/images/freebies/city-wallpaper-5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 55em;
+  font-family: 'Roboto Slab', serif;
+}
+
+.placement-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(200, 90, 0, 0.9);
+  padding: .3em 1em;
+  border-radius: .3em;
+  box-shadow: 0.1em 0.2em rgba(100, 100, 100, 1);
+}
+
+.login-container h1 {
+  margin: 0;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+}
+
+.login-button {
+  font-family: 'Roboto Slab', serif;
+  margin: .5em;
+  padding: .2em .5em;
+  background-color: #646464;
+  border: 1px solid transparent;
+  border-radius: .3em;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  border: 1px solid rgba(255, 215, 50, 1);
+  transition: 500ms;
+}
+
 .login-button,
 .logout-button {
+
 }
 
 .toggle-map-style,

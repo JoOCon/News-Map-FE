@@ -36,6 +36,7 @@ export class Events extends Component {
         >
           <img
             className="event-marker"
+            alt='map marker for an event'
             src="http://landon-homes.net/wp-content/uploads/2015/04/map-pin.png"
           />
         </Marker>

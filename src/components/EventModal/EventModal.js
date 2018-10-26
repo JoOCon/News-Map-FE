@@ -32,7 +32,7 @@ export const EventModal = ({
       )}
       <h1>Event: {name}</h1>
       <h4>Date: {date}</h4>
-      <img src={`${img}`} height={400} />
+      <img src={`${img}`} alt='current event' height={400} />
       <p>Location: {venue_name}</p>
       <p>Address: {address}</p>
     </div>

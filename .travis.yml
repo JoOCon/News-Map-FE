@@ -1,5 +1,5 @@
-"scripts": {
-  "start": "npm-run-all -p watch-css start-js"
-  "test": "react-scripts test --env=jsdom"
-}
-
+language: node_js
+node_js:
+  - "9"
+notifications:
+  email: false
