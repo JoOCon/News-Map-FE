@@ -26,15 +26,10 @@ export class WatchList extends Component {
     this.setState({ userWatchList });
   };
 
-  handleSelection = async (event, selectedItem) => {
+  handleSelection = (event, selectedItem) => {
     event.preventDefault();
     const { currentItem } = this.state;
     if (currentItem !== selectedItem.id) {
-      await call.getEventWeather(
-        selectedItem.lat,
-        selectedItem.lng,
-        selectedItem.unix
-      );
       this.setState({
         displayInfo: selectedItem,
         currentItem: selectedItem.id
@@ -42,6 +37,16 @@ export class WatchList extends Component {
     } else {
       this.setState({ currentItem: null });
     }
+  };
+
+  getWeather = async (event, selectedItem) => {
+    event.preventDefault();
+    const response = await call.getEventWeather(
+      selectedItem.lat,
+      selectedItem.lng,
+      selectedItem.unix
+    );
+    console.log(response);
   };
 
   removeEvent = async (e, event) => {
@@ -66,6 +71,7 @@ export class WatchList extends Component {
         <div className="favorites-list">{displayFavorites}</div>
         {currentItem && (
           <SelectedInfoContainer
+            getWeather={this.getWeather}
             removeEvent={this.removeEvent}
             item={displayInfo}
           />

@@ -6,7 +6,7 @@ export const WatchListCard = ({ handleSelection, item }) => {
   return (
     <div
       className="watch-list-card-container"
-      onClick={e => handleSelection(e, item)}
+      onClick={event => handleSelection(event, item)}
     >
       <h1 className="watch-list-card">{item.name}</h1>
       <img
