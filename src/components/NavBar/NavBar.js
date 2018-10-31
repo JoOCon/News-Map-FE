@@ -11,13 +11,13 @@ export class NavBar extends Component {
     return (
       <nav className="nav-container">
         <h1 className="greeting">{`Hello, ${first_name}`}</h1>
-        <NavLink className="nav-link" exact to={`/app/${id}`}>
+        <NavLink className="nav-link" exact to={`/home/${id}`}>
           Home
         </NavLink>
-        <NavLink className="nav-link" to={`/app/${id}/profile`}>
+        <NavLink className="nav-link" to={`/home/${id}/profile`}>
           Profile
         </NavLink>
-        <NavLink className="nav-link" to={`/app/${id}/watchlist`}>
+        <NavLink className="nav-link" to={`/home/${id}/watchlist`}>
           Watchlist
         </NavLink>
         <GoogleLogout

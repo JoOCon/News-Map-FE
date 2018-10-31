@@ -40,7 +40,7 @@ ShallowWrapper {
           aria-current="page"
           className="nav-link"
           exact={true}
-          to="/app/3"
+          to="/home/3"
         >
           Home
         </NavLink>,
@@ -48,7 +48,7 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="nav-link"
-          to="/app/3/profile"
+          to="/home/3/profile"
         >
           Profile
         </NavLink>,
@@ -56,7 +56,7 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="nav-link"
-          to="/app/3/watchlist"
+          to="/home/3/watchlist"
         >
           Watchlist
         </NavLink>,
@@ -98,7 +98,7 @@ ShallowWrapper {
           "children": "Home",
           "className": "nav-link",
           "exact": true,
-          "to": "/app/3",
+          "to": "/home/3",
         },
         "ref": null,
         "rendered": "Home",
@@ -113,7 +113,7 @@ ShallowWrapper {
           "aria-current": "page",
           "children": "Profile",
           "className": "nav-link",
-          "to": "/app/3/profile",
+          "to": "/home/3/profile",
         },
         "ref": null,
         "rendered": "Profile",
@@ -128,7 +128,7 @@ ShallowWrapper {
           "aria-current": "page",
           "children": "Watchlist",
           "className": "nav-link",
-          "to": "/app/3/watchlist",
+          "to": "/home/3/watchlist",
         },
         "ref": null,
         "rendered": "Watchlist",
@@ -172,7 +172,7 @@ ShallowWrapper {
             aria-current="page"
             className="nav-link"
             exact={true}
-            to="/app/3"
+            to="/home/3"
           >
             Home
           </NavLink>,
@@ -180,7 +180,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="nav-link"
-            to="/app/3/profile"
+            to="/home/3/profile"
           >
             Profile
           </NavLink>,
@@ -188,7 +188,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="nav-link"
-            to="/app/3/watchlist"
+            to="/home/3/watchlist"
           >
             Watchlist
           </NavLink>,
@@ -230,7 +230,7 @@ ShallowWrapper {
             "children": "Home",
             "className": "nav-link",
             "exact": true,
-            "to": "/app/3",
+            "to": "/home/3",
           },
           "ref": null,
           "rendered": "Home",
@@ -245,7 +245,7 @@ ShallowWrapper {
             "aria-current": "page",
             "children": "Profile",
             "className": "nav-link",
-            "to": "/app/3/profile",
+            "to": "/home/3/profile",
           },
           "ref": null,
           "rendered": "Profile",
@@ -260,7 +260,7 @@ ShallowWrapper {
             "aria-current": "page",
             "children": "Watchlist",
             "className": "nav-link",
-            "to": "/app/3/watchlist",
+            "to": "/home/3/watchlist",
           },
           "ref": null,
           "rendered": "Watchlist",

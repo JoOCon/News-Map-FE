@@ -1,6 +1,6 @@
 # keys
-src/utilities/apiCalls/apiKeys.js
 .env.development
+
 # Logs
 logs
 *.log

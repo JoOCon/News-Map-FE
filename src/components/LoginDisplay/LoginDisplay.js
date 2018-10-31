@@ -1,5 +1,4 @@
 import React from 'react';
-import * as keys from '../../utilities/apiCalls/apiKeys';
 import { GoogleLogin } from 'react-google-login';
 
 export const LoginDisplay = ({ login }) => (

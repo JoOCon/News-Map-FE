@@ -10,10 +10,10 @@ import { HomeDisplay } from '../HomeDisplay/HomeDisplay';
 export const Routes = ({ user, mapType, login, redirect }) => {
   return (
     <div className="App">
-      {!window.location.href.includes('app') &&
+      {!window.location.href.includes('home') &&
         redirect === true &&
-        user.id && <Redirect to={`/app/${user.id}`} />}
-      {window.location.href.includes('app') &&
+        user.id && <Redirect to={`/home/${user.id}`} />}
+      {window.location.href.includes('home') &&
         redirect === false && <Redirect to={`/`} />}
       <Route
         exact
@@ -26,19 +26,19 @@ export const Routes = ({ user, mapType, login, redirect }) => {
         <nav>
           <Route
             exact
-            path={`/app/${user.id}`}
+            path={`/home/${user.id}`}
             render={() => {
               return <HomeDisplay mapType={mapType} />;
             }}
           />
           <Route
             exact
-            path={`/app/${user.id}/watchlist`}
+            path={`/home/${user.id}/watchlist`}
             render={() => {
               return <WatchList />;
             }}
           />
-          <Route path={`/app/${user.id}/profile`} component={Profile} />
+          <Route path={`/home/${user.id}/profile`} component={Profile} />
         </nav>
       )}
     </div>

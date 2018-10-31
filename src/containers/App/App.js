@@ -32,6 +32,10 @@ export class App extends Component {
   };
 
   login = async res => {
+    // if (!res.email) {
+    //   console.log(res);
+    //   return;
+    // }
     const activeUser = await postUser(res.profileObj);
     this.props.loginUser(activeUser);
     this.setState({ user: activeUser, redirect: true });
@@ -109,7 +113,4 @@ export const mapDispatchToProps = dispatch => ({
   setUserLocation: coordinates => dispatch(setUserLocation(coordinates))
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(App);
+export default connect( null, mapDispatchToProps)(App);

@@ -1,13 +1,7 @@
 import React from 'react';
-
 import './EventModal.css';
 
-export const EventModal = ({
-  targetEvent,
-  handleFavoriteClick,
-  handleHover,
-  hoverMessage
-}) => {
+export const EventModal = ({ targetEvent, handleFavoriteClick, handleHover, hoverMessage }) => {
   const { name, img, date, venue_name, favorite, address } = targetEvent;
   return (
     <div className="event-modal-container">
