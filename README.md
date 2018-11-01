@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/JoOCon/event-mapper-fe.svg?branch=master)](https://travis-ci.org/JoOCon/event-mapper-fe)
+
 # Event Mapper
 
 [Heroku Link](https://event-mapper-fe.herokuapp.com/)
