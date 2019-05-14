@@ -16,12 +16,13 @@ Event Mapper is a map application that allows users to find events near their ar
 * [TicketMaster API](https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/)
 * [DarkSky API](https://darksky.net/dev/docs)
 
-## Setup
+## Set Up
 Clone down this [Repo](https://github.com/JoOCon/event-mapper-fe.git)
 * Install dependencies `npm install`
 * Run server `npm start`
-* Run tests || test coverage`npm test || npm test -- --coverage`
 * eslint `npm run eslint`
+
+* Run tests || test coverage`npm test || npm test -- --coverage`
 
 ### Contributors
 * [Joel O'Connor](https://github.com/JoOCon)
@@ -29,8 +30,6 @@ Clone down this [Repo](https://github.com/JoOCon/event-mapper-fe.git)
 * [Seth Schwartz(BE)](https://github.com/SSchwartz214)
 
 ## Results
-Map page
 ![event-mapper-fe-2](https://user-images.githubusercontent.com/35910428/47851268-c042b000-dd9d-11e8-8b8c-3e33278c958d.gif)
 
-Watchlist page
 ![event-mapper-3](https://user-images.githubusercontent.com/35910428/47851253-b3be5780-dd9d-11e8-9eaa-17592d6b57d7.gif)
